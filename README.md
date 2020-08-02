@@ -22,9 +22,12 @@ da AsapLog.
         <ul>
             <li>Criar guia para setup do projeto e instruções para rodar: 
                 <br />Integração contínua na plataforma <a href="https://seguradora.herokuapp.com/">Heroku</a></li>
-            <li>Gerar .jar ou .war para rodar o projeto <a href=""></a> </li>
+            <li>Gerar .jar ou .war para rodar o projeto: 
+                <br />Executar <code>./gradlew  clean build -x test</code> 
+                <br />Encontrar o arquivo na raíz do projeto<code>/build/libs</code>
+            </li>
             <li>GitHub <a href="https://github.com/guilhermehenriquelopes/seguradora.git">https://github.com/guilhermehenriquelopes/seguradora.git</a> </li>
-            <li>Caso opte por testar localmente, seguir os próximos passos</li>
+            <li><b>Caso opte por testar localmente, seguir os próximos passos</b></li>
         </ul>
     </li>
 </ul>
@@ -63,7 +66,7 @@ Verifique a versão do Gradle instalado: <br/>
         <code>docker build -f Dockerfile -t seguradora .</code>        
     </li>
     <li>Rodo o comando abaixo para iniciar a aplicação: <br />
-        <code>docker run -p 9091:9091 loyalty</code>
+        <code>docker run -p 9091:9091 seguradora</code>
     </li>
     <li>Verifique se a aplicação está rodando na seguinte URL: <br />
         <a href="http://localhost:9091/swagger-ui.html">http://localhost:9091/swagger-ui.html</a>
