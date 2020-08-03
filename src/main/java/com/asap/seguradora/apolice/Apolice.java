@@ -1,5 +1,6 @@
 package com.asap.seguradora.apolice;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Builder;
 import lombok.Data;
 import org.hibernate.validator.constraints.br.CPF;
@@ -22,9 +23,11 @@ public class Apolice {
     private String numero;
 
     @NotNull
+    @JsonFormat(pattern="yyyy-MM-dd")
     private Date vigencia_inicio;
 
     @NotNull
+    @JsonFormat(pattern="yyyy-MM-dd")
     private Date vigencia_fim;
 
     @NotEmpty
