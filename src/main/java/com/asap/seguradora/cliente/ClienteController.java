@@ -42,12 +42,6 @@ public class ClienteController extends HandlerException {
         return service.save(cliente);
     }
 
-    @DeleteMapping("/deleteAll")
-    @ApiOperation(value = "Deleta todos os clientes")
-    public void deleteAll() {
-        service.deleteAll();
-    }
-
     @DeleteMapping
     @ApiOperation(value = "Deleta o cliente com o CPF informado")
     public void deleteByCpf(@RequestParam String id) {

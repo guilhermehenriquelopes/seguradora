@@ -49,12 +49,6 @@ public class ApoliceController extends HandlerException {
         return service.save(apolice);
     }
 
-    @DeleteMapping("/deleteAll")
-    @ApiOperation(value = "Deleta todas as apólices")
-    public void deleteAll(){
-        service.deleteAll();
-    }
-
     @DeleteMapping
     @ApiOperation(value = "Deleta a apólice com o número informado")
     public void deleteByNumero(@RequestParam String id){
