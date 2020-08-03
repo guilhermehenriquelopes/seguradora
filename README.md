@@ -1,7 +1,12 @@
 <h1>API - Seguradora</h1>
 
 Esta API REST foi construída para atender os requisitos solicitados no processo seletivo
-da AsapLog. 
+da AsapLog.
+
+<p>
+Para facilitar os testes a aplicação foi publicada na plataforma Heroku, 
+e pode ser acessada através do link: <a href="https://seguradora.herokuapp.com/swagger-ui.html">https://seguradora.herokuapp.com/swagger-ui.html</a> 
+</p>
 
 <h3>Ferramentas utilizadas: </h3>
 <ul>
@@ -27,12 +32,11 @@ da AsapLog.
                 <br />Encontrar o arquivo na raíz do projeto<code>/build/libs</code>
             </li>
             <li>GitHub <a href="https://github.com/guilhermehenriquelopes/seguradora.git">https://github.com/guilhermehenriquelopes/seguradora.git</a> </li>
-            <li><b>Caso opte por testar localmente, seguir os próximos passos</b></li>
         </ul>
     </li>
 </ul>
 
-<h3>Requisitos</h3>
+<h3>Requisitos para deploy local</h3>
 
 <a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/">- Instalação Docker</a>
 
