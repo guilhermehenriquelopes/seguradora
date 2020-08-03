@@ -25,8 +25,8 @@ public class ClienteController extends HandlerException {
 
     @GetMapping("{cpf}")
     @ApiOperation(value = "Retorna um cliente com o CPF informado")
-    public Optional<Cliente> findByCpf(@RequestParam String id) {
-        return service.findById(id);
+    public Optional<Cliente> findByCpf(@RequestParam String cpf) {
+        return service.findById(cpf);
     }
 
     @PostMapping
@@ -44,7 +44,7 @@ public class ClienteController extends HandlerException {
 
     @DeleteMapping
     @ApiOperation(value = "Deleta o cliente com o CPF informado")
-    public void deleteByCpf(@RequestParam String id) {
-        service.deleteById(id);
+    public void deleteByCpf(@RequestParam String cpf) {
+        service.deleteById(cpf);
     }
 }

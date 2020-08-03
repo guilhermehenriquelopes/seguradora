@@ -32,8 +32,8 @@ public class ApoliceController extends HandlerException {
 
     @GetMapping("{numero}")
     @ApiOperation(value = "Retorna a apólice com o número informado")
-    public Optional<Apolice> findById(@RequestParam String id) {
-        return service.findById(id);
+    public Optional<Apolice> findById(@RequestParam String numero) {
+        return service.findById(numero);
     }
 
     @PostMapping
@@ -51,8 +51,8 @@ public class ApoliceController extends HandlerException {
 
     @DeleteMapping
     @ApiOperation(value = "Deleta a apólice com o número informado")
-    public void deleteByNumero(@RequestParam String id){
-        service.deleteById(id);
+    public void deleteByNumero(@RequestParam String numero){
+        service.deleteById(numero);
     }
 
 }
